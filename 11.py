@@ -1,6 +1,9 @@
-temp = int(input("Enter temperature: "))
+num = int(input("Enter a number: "))
+num = abs(num)
+count = 0
 
-if temp > 30:
-    print("Hot")
-else:
-    print("Cold")
+while num > 0:
+    count = count + 1
+    num = num // 10
+
+print("Total digits:", count)

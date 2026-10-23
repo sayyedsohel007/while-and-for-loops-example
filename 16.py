@@ -1,10 +1,3 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-c = int(input("Enter third number: "))
-
-if a > b and a > c:
-    print("Greatest:", a)
-elif b > c:
-    print("Greatest:", b)
-else:
-    print("Greatest:", c)
+for i in range(1, 101):
+    if i % 5 == 0:
+        print(i)

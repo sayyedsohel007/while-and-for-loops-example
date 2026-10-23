@@ -1,7 +1,8 @@
-attendance = float(input("Enter attendance percentage: "))
-marks = int(input("Enter marks: "))
+base = int(input("Enter base: "))
+exp = int(input("Enter exponent: "))
+result = 1
 
-if attendance >= 75 and marks >= 40:
-    print("Eligible for exam")
-else:
-    print("Not eligible for exam")
+for i in range(exp):
+    result = result * base
+
+print("Answer:", result)

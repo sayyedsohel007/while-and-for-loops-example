@@ -1,11 +1,14 @@
-amount = float(input("Enter shopping amount: "))
+num = int(input("Enter a number: "))
+original = num
+total = 0
+digits = len(str(abs(num)))
 
-if amount >= 5000:
-    discount = amount * 0.20
-elif amount >= 2000:
-    discount = amount * 0.10
+while num > 0:
+    digit = num % 10
+    total = total + digit ** digits
+    num = num // 10
+
+if original >= 0 and total == original:
+    print("Armstrong number")
 else:
-    discount = 0
-
-print("Discount:", discount)
-print("Final amount:", amount - discount)
+    print("Not an Armstrong number")

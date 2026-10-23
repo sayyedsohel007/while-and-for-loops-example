@@ -1,11 +1,4 @@
-num = int(input("Enter a number: "))
-num = abs(num)
+n = int(input("Enter n: "))
 
-if num <= 9:
-    print("Single-digit number")
-elif num <= 99:
-    print("Double-digit number")
-elif num <= 999:
-    print("Three-digit number")
-else:
-    print("More than three digits")
+for i in range(1, n + 1):
+    print(i * 2)

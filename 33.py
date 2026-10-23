@@ -1,7 +1,6 @@
-age = int(input("Enter age: "))
-salary = float(input("Enter monthly salary: "))
+text = input("Enter a string: ")
 
-if age >= 21 and salary >= 25000:
-    print("Eligible to apply for loan")
-else:
-    print("Not eligible based on these criteria")
+for ch in text[::-1]:
+    print(ch, end="")
+
+print()

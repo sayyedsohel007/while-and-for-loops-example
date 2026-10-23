@@ -1,9 +1,4 @@
-num = int(input("Enter a number: "))
+n = int(input("Enter n: "))
 
-if num > 0:
-    if num % 2 == 0:
-        print("Positive and even")
-    else:
-        print("Positive but odd")
-else:
-    print("Not a positive number")
+for i in range(n):
+    print(2 * i + 1)

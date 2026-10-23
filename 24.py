@@ -1,10 +1,8 @@
-marks = int(input("Enter marks: "))
+text = input("Enter a string: ")
+count = 0
 
-if marks >= 75:
-    print("Distinction")
-elif marks >= 60:
-    print("First Class")
-elif marks >= 40:
-    print("Pass")
-else:
-    print("Fail")
+for ch in text.lower():
+    if ch in "aeiou":
+        count = count + 1
+
+print("Total vowels:", count)

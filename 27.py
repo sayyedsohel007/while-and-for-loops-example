@@ -1,7 +1,5 @@
-username = input("Enter username: ")
-password = input("Enter password: ")
+num = int(input("Enter a number: "))
 
-if username == "sohel" and password == "1234":
-    print("Login successful")
-else:
-    print("Invalid username or password")
+for i in range(1, abs(num) + 1):
+    if num != 0 and num % i == 0:
+        print(i)

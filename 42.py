@@ -1,18 +1,7 @@
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
-op = input("Enter operator (+, -, *, /): ")
+n = int(input("Enter n: "))
+total = 0
 
-match op:
-    case "+":
-        print("Result:", a + b)
-    case "-":
-        print("Result:", a - b)
-    case "*":
-        print("Result:", a * b)
-    case "/":
-        if b != 0:
-            print("Result:", a / b)
-        else:
-            print("Cannot divide by zero")
-    case _:
-        print("Invalid operator")
+for i in range(1, n + 1):
+    total = total + i * i
+
+print("Sum of squares:", total)

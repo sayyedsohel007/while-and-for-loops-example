@@ -1,6 +1,7 @@
-num = int(input("Enter a number: "))
+for i in range(1, 6):
+    print("Table of", i)
 
-if num % 3 == 0 and num % 5 == 0:
-    print("Divisible by both 3 and 5")
-else:
-    print("Not divisible by both 3 and 5")
+    for j in range(1, 11):
+        print(i, "x", j, "=", i * j)
+
+    print()

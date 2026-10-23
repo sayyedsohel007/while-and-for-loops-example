@@ -1,10 +1,12 @@
-marks = int(input("Enter marks: "))
+num = abs(int(input("Enter a number: ")))
+largest = 0
 
-if marks >= 80:
-    print("Grade A")
-elif marks >= 60:
-    print("Grade B")
-elif marks >= 40:
-    print("Grade C")
-else:
-    print("Fail")
+while num > 0:
+    digit = num % 10
+
+    if digit > largest:
+        largest = digit
+
+    num = num // 10
+
+print("Largest digit:", largest)

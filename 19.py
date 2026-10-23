@@ -1,18 +1,15 @@
-day = int(input("Enter day number (1-7): "))
+num = int(input("Enter a number: "))
+prime = True
 
-if day == 1:
-    print("Monday")
-elif day == 2:
-    print("Tuesday")
-elif day == 3:
-    print("Wednesday")
-elif day == 4:
-    print("Thursday")
-elif day == 5:
-    print("Friday")
-elif day == 6:
-    print("Saturday")
-elif day == 7:
-    print("Sunday")
+if num < 2:
+    prime = False
 else:
-    print("Invalid day number")
+    for i in range(2, num):
+        if num % i == 0:
+            prime = False
+            break
+
+if prime:
+    print("Prime number")
+else:
+    print("Not a prime number")

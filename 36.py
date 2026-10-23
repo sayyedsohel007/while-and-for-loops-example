@@ -1,6 +1,11 @@
-age = int(input("Enter age: "))
+total = 0
 
-if age >= 18:
-    print("Eligible by age")
-else:
-    print("Not eligible by age")
+while True:
+    num = int(input("Enter a number (0 to stop): "))
+
+    if num == 0:
+        break
+
+    total = total + num
+
+print("Total sum:", total)

@@ -1,8 +1,12 @@
-salary = float(input("Enter salary: "))
-years = int(input("Enter years of service: "))
+num = abs(int(input("Enter a number: ")))
+total = 0
 
-if years >= 5:
-    bonus = salary * 0.10
-    print("Bonus:", bonus)
-else:
-    print("No bonus")
+while num > 0:
+    digit = num % 10
+
+    if digit % 2 == 0:
+        total = total + digit
+
+    num = num // 10
+
+print("Sum of even digits:", total)

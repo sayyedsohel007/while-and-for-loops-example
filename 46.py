@@ -1,13 +1,5 @@
-grade = input("Enter grade (A, B, C, F): ").upper()
+num = int(input("Enter a number: "))
+n = int(input("Enter number of multiples: "))
 
-match grade:
-    case "A":
-        print("Excellent")
-    case "B":
-        print("Very Good")
-    case "C":
-        print("Good")
-    case "F":
-        print("Fail")
-    case _:
-        print("Invalid grade")
+for i in range(1, n + 1):
+    print(num * i)

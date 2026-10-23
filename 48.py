@@ -1,15 +1,18 @@
-print("1. English")
-print("2. Hindi")
-print("3. Marathi")
+num = int(input("Enter a number: "))
+original = num
+total = 0
 
-choice = int(input("Select language: "))
+while num > 0:
+    digit = num % 10
+    fact = 1
 
-match choice:
-    case 1:
-        print("You selected English")
-    case 2:
-        print("You selected Hindi")
-    case 3:
-        print("You selected Marathi")
-    case _:
-        print("Invalid choice")
+    for i in range(1, digit + 1):
+        fact = fact * i
+
+    total = total + fact
+    num = num // 10
+
+if original >= 0 and total == original:
+    print("Strong number")
+else:
+    print("Not a strong number")

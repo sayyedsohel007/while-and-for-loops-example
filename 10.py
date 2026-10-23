@@ -1,6 +1,2 @@
-num = int(input("Enter a number: "))
-
-if -9 <= num <= 9:
-    print("Single-digit number")
-else:
-    print("Not a single-digit number")
+for i in range(1, 11):
+    print(i, "Cube =", i * i * i)

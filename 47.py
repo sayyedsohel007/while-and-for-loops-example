@@ -1,11 +1,12 @@
-role = input("Enter role: ").lower()
+num = abs(int(input("Enter a number: ")))
+product = 1
 
-match role:
-    case "admin":
-        print("Full access")
-    case "user":
-        print("Normal access")
-    case "guest":
-        print("Limited access")
-    case _:
-        print("Invalid role")
+if num == 0:
+    product = 0
+else:
+    while num > 0:
+        digit = num % 10
+        product = product * digit
+        num = num // 10
+
+print("Product of digits:", product)

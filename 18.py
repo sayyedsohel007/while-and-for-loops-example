@@ -1,8 +1,10 @@
-num = int(input("Enter a number: "))
+for num in range(2, 51):
+    prime = True
 
-if num > 0:
-    print("Positive")
-elif num < 0:
-    print("Negative")
-else:
-    print("Zero")
+    for i in range(2, num):
+        if num % i == 0:
+            prime = False
+            break
+
+    if prime:
+        print(num)

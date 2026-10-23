@@ -1,15 +1,6 @@
-year = int(input("Enter year: "))
+text = input("Enter a string: ")
 
-if year % 100 == 0:
-    print("Century year")
+if text == text[::-1]:
+    print("Palindrome string")
 else:
-    print("Not a century year")
-
-if year % 400 == 0:
-    print("Leap year")
-elif year % 100 == 0:
-    print("Not a leap year")
-elif year % 4 == 0:
-    print("Leap year")
-else:
-    print("Not a leap year")
+    print("Not a palindrome string")

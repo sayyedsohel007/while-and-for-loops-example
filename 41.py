@@ -1,19 +1,7 @@
-day = int(input("Enter day number (1-7): "))
+n = int(input("Enter n: "))
+total = 0
 
-match day:
-    case 1:
-        print("Monday")
-    case 2:
-        print("Tuesday")
-    case 3:
-        print("Wednesday")
-    case 4:
-        print("Thursday")
-    case 5:
-        print("Friday")
-    case 6:
-        print("Saturday")
-    case 7:
-        print("Sunday")
-    case _:
-        print("Invalid day")
+for i in range(1, n + 1):
+    total = total + i * i
+
+print("Sum of squares:", total)
